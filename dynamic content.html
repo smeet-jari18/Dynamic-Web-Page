@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dynamic Web Page</title>
+</head>
+
+<body>
+
+    <center>
+
+    <h2 id="Main">Dynamic Content</h2>
+
+    <h1 id="heading">HI, I am Smeet Jariwala</h1>
+
+    <p id="message">Welcome to my webpage!</p>
+
+    <button onclick="changeContent()">Change Content</button>
+
+    <script>
+
+        function changeContent() {
+
+            document.getElementById("Main").style.background = "purple";
+            document.getElementById("Main").style.color = "white";
+
+            document.getElementById("message").innerHTML =
+                "Content changed dynamically using JavaScript!";
+            document.getElementById("message").style.fontWeight = "700";
+
+            let h1_head = document.getElementById("heading");
+
+            h1_head.innerHTML = "Hello, I am Smeet Jariwala";
+
+            h1_head.style.color = "red";
+
+            h1_head.style.fontWeight = "bold";
+        }
+
+    </script>
+
+    </center>
+
+</body>
+
+</html>
